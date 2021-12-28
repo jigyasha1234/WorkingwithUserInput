@@ -1,11 +1,12 @@
 function getNameFromCommandLine() {
     // Write you code here, name should be taken as args in process.argv
-    return String(process.arg[2]);
+     return String(process.argv[2]);
 }
 
 function getNameFromEnv() {
     // Write your code here
-    return process.env.name;
+    process.env.ENV_VARIABLE="Yash"
+    return process.env.ENV_VARIABLE;
 }
 
 function getNameFromReadLine() {
@@ -15,9 +16,9 @@ function getNameFromReadLine() {
         input: process.stdin,
         output: process.stdout
     });
-    const input=null
-    rl.question("input",(ans)=>{
-        input=ans
+    const input_var =null
+    rl.question("Input",(answer)=>{
+        input_var = answer
     });
 }
 
