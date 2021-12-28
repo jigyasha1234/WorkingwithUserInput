@@ -20,6 +20,7 @@ function getNameFromReadLine() {
     rl.question("Input",(answer)=>{
         input_var = answer
     });
+    return input_var
 }
 
 module.exports = {
